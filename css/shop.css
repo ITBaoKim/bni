@@ -1,0 +1,133 @@
+/* =====================
+   MAIN CONTENT
+   ===================== */
+.main-content {
+    padding: 50px 0;
+}
+
+/* =====================
+   SECTION TITLE
+   ===================== */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    color: #CF2030;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #cf2030;
+}
+
+.section-title p {
+    color: #707070;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* =====================
+   MEMBER SHOP GRID (4 cols)
+   ===================== */
+.member-shop {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Product Card - shop sizing */
+.product-card {
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-card img {
+    width: 150px;
+}
+
+.product-card h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    min-height: 50px;
+}
+
+.product-card .product-price {
+    margin-bottom: 15px;
+}
+
+.product-card .product-price strong {
+    font-size: 22px;
+}
+
+.product-card .product-price .currency {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.product-card p {
+    color: #707070;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.product-card .product-features {
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.product-card .product-features li {
+    padding: 5px 0;
+    font-size: 13px;
+}
+
+/* Button Cart */
+.btn-cart {
+    padding: 10px 32px;
+    background: #cf2030;
+    color: #ffffff !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: normal;
+    font-size: 14px;
+    transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    width: auto;
+    margin-top: auto;
+    display: inline-block;
+}
+
+.btn-cart:hover {
+    background: #b01a28;
+}
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+@media (max-width: 1024px) {
+    .member-shop {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .member-shop {
+        grid-template-columns: 1fr;
+    }
+}
