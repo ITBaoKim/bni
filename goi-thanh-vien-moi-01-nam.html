@@ -277,5 +277,17 @@
             window.location.href = 'https://plus1.baokim.vn/shop/bnivietnam/goi-thanh-vien-moi-01-nam';
         }
     </script>
+    <script>
+        var version = new Date().getTime(); 
+
+        var cssLink = document.createElement("link");
+        cssLink.rel = "stylesheet";
+        cssLink.href = "./css/baokim.css?v=" + version;
+        document.head.appendChild(cssLink);
+
+        var jsScript = document.createElement("script");
+        jsScript.src = "./js/baokim.js?v=" + version;
+        document.body.appendChild(jsScript);
+    </script>
 </body>
 </html>
