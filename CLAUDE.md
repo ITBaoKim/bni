@@ -9,7 +9,7 @@ BNI Vietnam Member Shop — a static HTML/CSS website for selling BNI membership
 ## Architecture
 
 **Page types:**
-- **Shop page** (`member-shop.html`): Product listing grid (4 columns) linking to detail pages. Uses `css/shared.css` + `css/shop.css`.
+- **Shop page** (`index.html`): Product listing grid (4 columns) linking to detail pages. Uses `css/shared.css` + `css/shop.css`.
 - **Detail pages** (`goi-*.html`): Individual product pages with image, pricing, tabbed content (benefits/description/policy), and related products. Uses `css/shared.css` + `css/detail.css`.
 
 **CSS structure:**
@@ -24,6 +24,9 @@ BNI Vietnam Member Shop — a static HTML/CSS website for selling BNI membership
 - Product images are hosted externally on `bni.vn`.
 - Tab switching on detail pages uses inline `onclick="switchTab()"` with vanilla JS.
 - Header and footer markup is duplicated across all HTML files (no templating).
+- Logo in header is an `<a href="index.html" class="logo">` (clickable, links to home).
+- Nav "Sản phẩm" links to `index.html`.
+- Breadcrumbs (detail pages only): 2 parts — `<a href="index.html">Trang chủ</a> / <span>Tên trang</span>`.
 
 ## Products
 
