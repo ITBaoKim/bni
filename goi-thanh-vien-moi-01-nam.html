@@ -7,6 +7,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/shared.css">
     <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="https://public-cdn.baokim.vn/js-server/baokim.css">
+    <style>
+        .bk-btn-box, .bk-btn-installment, .bk-btn-installment-amigo, .bk-btn-paynow {
+            width: 100%!important;
+        }
+
+        .bk-btn-installment, .bk-btn-installment-amigo, .bk-btn-paynow {
+            min-height: 12vh !important;
+        }
+    </style>
 </head>
 <body>
     <!-- Header -->
@@ -46,14 +56,14 @@
                     <!-- Left: Image -->
                     <div class="product-image-side">
                         <div class="product-badge">Thành viên mới</div>
-                        <img src="https://bni.vn/img/site/68599e6d21dceb000d6339f2.jpg" alt="Gói Thành viên mới 01 năm">
+                        <img class="bk-product-image" src="https://bni.vn/img/site/68599e6d21dceb000d6339f2.jpg" alt="Gói Thành viên mới 01 năm">
                         <p class="product-code">Mã sản phẩm: BNI-New 01</p>
                     </div>
 
                     <!-- Right: Info -->
                     <div class="product-info-side">
                         <p class="product-category">BNI Vietnam &mdash; Gói thành viên</p>
-                        <h1 class="product-title">Gói Thành Viên Mới 01 Năm</h1>
+                        <h1 class="product-title bk-product-name">Gói Thành Viên Mới 01 Năm</h1>
                         <p class="product-short-desc">
                             Gói thành viên mới cho phép tham gia vào hệ thống BNI Vietnam trong thời gian 01 năm, mở ra cơ hội kết nối kinh doanh, chia sẻ cơ hội và phát triển mạng lưới đối tác toàn quốc.
                         </p>
@@ -61,10 +71,11 @@
                         <!-- Price -->
                         <div class="price-block">
                             <p class="price-label">Giá bán</p>
-                            <p class="price-main">
+                            <p class="price-main bk-product-price">
                                 17.027.280 <span class="currency">VND</span>
                             </p>
                             <!-- Hidden raw price -->
+                            <input type="hidden" value="1" class="bk-product-qty">
                             <input type="hidden" class="price-raw" value="17027280" data-product-id="member-new-1year">
                             <p class="price-note">Đã bao gồm VAT 10% &bull; Thời hạn 12 tháng</p>
                         </div>
@@ -81,7 +92,7 @@
                                 <li>Hiệu lực 12 tháng kể từ ngày kích hoạt</li>
                             </ul>
                         </div>
-
+                        <div class='bk-btn'></div>
                     </div>
                 </div>
             </div>
@@ -277,17 +288,6 @@
             window.location.href = 'https://plus1.baokim.vn/shop/bnivietnam/goi-thanh-vien-moi-01-nam';
         }
     </script>
-    <script>
-        var version = new Date().getTime(); 
-
-        var cssLink = document.createElement("link");
-        cssLink.rel = "stylesheet";
-        cssLink.href = "./css/baokim.css?v=" + version;
-        document.head.appendChild(cssLink);
-
-        var jsScript = document.createElement("script");
-        jsScript.src = "./js/baokim.js?v=" + version;
-        document.body.appendChild(jsScript);
-    </script>
+    <script src="https://public-cdn.baokim.vn/js-server/baokim.min.js"></script>
 </body>
 </html>

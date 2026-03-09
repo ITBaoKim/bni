@@ -7,6 +7,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/shared.css">
     <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="https://public-cdn.baokim.vn/js-server/baokim.css">
+    <style>
+        .bk-btn-box, .bk-btn-installment, .bk-btn-installment-amigo, .bk-btn-paynow {
+            width: 100%!important;
+        }
+
+        .bk-btn-installment, .bk-btn-installment-amigo, .bk-btn-paynow {
+            min-height: 12vh !important;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -255,17 +265,6 @@
             document.getElementById(tabId).classList.add('active');
         }
     </script>
-    <script>
-        var version = new Date().getTime(); 
-
-        var cssLink = document.createElement("link");
-        cssLink.rel = "stylesheet";
-        cssLink.href = "./css/baokim.css?v=" + version;
-        document.head.appendChild(cssLink);
-
-        var jsScript = document.createElement("script");
-        jsScript.src = "./js/baokim.js?v=" + version;
-        document.body.appendChild(jsScript);
-    </script>
+    <script src="https://public-cdn.baokim.vn/js-server/baokim.min.js"></script>
 </body>
 </html>
