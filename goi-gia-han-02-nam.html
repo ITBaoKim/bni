@@ -7,6 +7,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/shared.css">
     <link rel="stylesheet" href="css/detail.css">
+    <link rel="stylesheet" href="https://public-cdn.baokim.vn/js-server/baokim.css">
+    <style>
+        .bk-btn-box, .bk-btn-installment, .bk-btn-installment-amigo, .bk-btn-paynow {
+            width: 100%!important;
+        }
+
+        .bk-btn-installment, .bk-btn-installment-amigo, .bk-btn-paynow {
+            min-height: 60px !important;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -17,14 +27,11 @@
         </div>
         <div class="header-main">
             <div class="container">
-                <div class="logo">
-                    <div class="logo-text">
-                        BNI<sup>®</sup> Vietnam
-                        <span>Business Network International</span>
-                    </div>
-                </div>
+                <a href="index.html" class="logo">
+                    <img src="https://bni.vn/img/site/68599e6d21dceb000d6339f2.jpg" alt="BNI Vietnam">
+                </a>
                 <ul class="nav-menu">
-                    <li><a href="member-shop.html">Sản phẩm</a></li>
+                    <li><a href="index.html">Sản phẩm</a></li>
                 </ul>
             </div>
         </div>
@@ -33,8 +40,7 @@
     <main class="main-content">
         <div class="container">
             <div class="breadcrumb">
-                <a href="#">Trang chủ</a> /
-                <a href="member-shop.html">Gói thành viên</a> /
+                <a href="index.html">Trang chủ</a> /
                 <span>Gói gia hạn 02 năm</span>
             </div>
 
@@ -42,22 +48,23 @@
                 <div class="product-detail-inner">
                     <div class="product-image-side">
                         <div class="product-badge">Gia hạn thành viên</div>
-                        <img src="https://bni.vn/img/site/68599e6d21dceb000d6339f2.jpg" alt="Gói gia hạn 02 năm">
+                        <img class="bk-product-image" src="https://bni.vn/img/site/68599e6d21dceb000d6339f2.jpg" alt="Gói gia hạn 02 năm">
                         <p class="product-code">Mã sản phẩm: BNI-Renew-02</p>
                     </div>
 
                     <div class="product-info-side">
                         <p class="product-category">BNI Vietnam &mdash; Gia hạn thành viên</p>
-                        <h1 class="product-title">Gói Gia Hạn 02 Năm</h1>
+                        <h1 class="product-title bk-product-name">Gói Gia Hạn 02 Năm</h1>
                         <p class="product-short-desc">
                             Gói gia hạn ưu đãi dành riêng cho Thành viên BNI hiện tại, gia hạn tư cách thành viên thêm 02 năm và tiếp tục hưởng toàn bộ quyền lợi trong hệ thống BNI Vietnam với mức giá tiết kiệm nhất.
                         </p>
 
                         <div class="price-block">
                             <p class="price-label">Giá bán</p>
-                            <p class="price-main">
+                            <p class="price-main bk-product-price">
                                 27.079.056 <span class="currency">VND</span>
                             </p>
+                            <input type="hidden" value="1" class="bk-product-qty">
                             <input type="hidden" class="price-raw" value="27079056" data-product-id="member-renew-2year">
                             <p class="price-note">Đã bao gồm VAT 10% &bull; Thời hạn 24 tháng</p>
                         </div>
@@ -73,6 +80,7 @@
                                 <li>Gia hạn 24 tháng kể từ ngày kích hoạt</li>
                             </ul>
                         </div>
+                        <div class='bk-btn'></div>
                     </div>
                 </div>
             </div>
@@ -254,5 +262,6 @@
             document.getElementById(tabId).classList.add('active');
         }
     </script>
+    <script src="https://public-cdn.baokim.vn/js-server/baokim.min.js"></script>
 </body>
 </html>
