@@ -32,10 +32,10 @@ BNI Vietnam Member Shop — a static HTML/CSS website for selling BNI membership
 
 | ID | Page | Price (VND) |
 |---|---|---|
-| `member-new-1year` | `goi-thanh-vien-moi-01-nam.html` | 17,027,280 |
-| `member-new-2year` | `goi-thanh-vien-moi-02-nam.html` | 29,239,056 |
-| `member-renew-1year` | `goi-gia-han-01-nam.html` | 14,867,280 |
-| `member-renew-2year` | `goi-gia-han-02-nam.html` | 27,079,056 |
+| `member-new-1year` | `goi-thanh-vien-moi-01-nam.html` | 17,820,000 |
+| `member-new-2year` | `goi-thanh-vien-moi-02-nam.html` | 30,545,940 |
+| `member-renew-1year` | `goi-gia-han-01-nam.html` | 15,660,000 |
+| `member-renew-2year` | `goi-gia-han-02-nam.html` | 28,385,940 |
 
 ## Responsive Breakpoints
 
